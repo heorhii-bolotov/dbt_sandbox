@@ -1,0 +1,6 @@
+dbt-core
+dbt-postgres
+dbt-redshift
+dbt-snowflake
+dbt-bigquery
+flake8
