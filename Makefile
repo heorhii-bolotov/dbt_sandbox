@@ -18,7 +18,7 @@ run: $(VENV)/bin/activate
 
 dbt_init: $(VENV)/bin/activate
 	echo N | dbt init --profiles-dir ./configs --profile profiles.yml $(DBT_PROJECT_ID) # don't overwrite the profiles.yml file
-	cd ae_bootcamp && dbt debug --profiles-dir ../configs/
+	cd $(DBT_PROJECT_ID) && dbt debug --profiles-dir ../configs/ && dbt run --profiles-dir ../configs/
 
 $(VENV)/bin/activate: requirements.txt
 	python3 -m venv $(VENV)
