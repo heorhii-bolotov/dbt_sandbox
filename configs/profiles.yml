@@ -1,0 +1,13 @@
+ae_bootcamp:
+  outputs:
+    dev:
+      dataset: dl_northwind
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: europe-west1
+      method: oauth
+      priority: interactive
+      project: playground-s-11-6a75076f
+      threads: 4
+      type: bigquery
+  target: dev
